@@ -308,12 +308,12 @@ ggplot(data = IPA_Ale) +
   geom_point(mapping = aes(x = ABV, y = IBU, color = Style)) + 
   geom_smooth(aes(x = ABV, y = IBU, color = Style)) +
   facet_wrap(~ Style) +
-  ggtitle("Difference Between Ales and IPA's")
+  ggtitle("Difference Between Ales and IPA's") + theme_economist_white()
 ```
 
 # Q9. Find one other useful inference from the data that you feel Budweiser may be able to find value in.  You must convince them why it is important and back up your conviction with appropriate statistical evidence. 
 
-### Using data gathered by the National Institute on Alchol Abuse and Alcoholism, the number of types of beers offered by each state's breweries was compared to the overall beer consumption. This insight on what the best strategies moving forward might be, particularly if it is worth the cost of diversifying beer offerings or focusing on states that currently seem to prefer more "staple" brands and beers. 
+### Using data gathered by the National Institute on Alcohol Abuse and Alcoholism, the number of types of beers offered by each state's breweries was compared to the overall beer consumption. This insight on what the best strategies moving forward might be, particularly if it is worth the cost of diversifying beer offerings or focusing on states that currently seem to prefer more "staple" brands and beers. 
 
 ### In conclusion - there is not visual or statistical evidence to suggest correlation between volume of beer consumed per capita and the number of beers offered in the state - therefore the return of investement on developing, distributing, and marketing new types of beers to these State markets that could already be oversaturated is questionable. It also does not look like introducing new beer types to states that don't currently have a lot of local offerings would therefore increase consumption/sales. A better potential route would be to strategically expand based off states beer type preferences as mentioned earlier.
 
@@ -392,5 +392,5 @@ df2 %>% select (Beer.Per.Capita, Beers, BeerCapita_Factor) %>% ggpairs(aes(color
 ### Based on these insights we have the following recommendations that Budweiser can explore in further detail
 
  1. It does not appear that there is justification to add additional breweries in states in order to increase demand - unless there is an opportunity to reduce distribution costs.
- 1. Instead we recommend exploring the opportunity to make and market beers based off of a given state or regions bitterness preference in order to capture more market share in those areas.
+ 1. Instead we recommend continuing the recent strategy to make (or acquire) and market beers based off of a given state or regions bitterness preference in order to capture more market share in those areas.
 
